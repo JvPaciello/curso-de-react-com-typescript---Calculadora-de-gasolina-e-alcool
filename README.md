@@ -1,54 +1,56 @@
-# React + TypeScript + Vite
+# Calculadora de Gasolina e Álcool
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o primeiro projeto desenvolvido no curso de React.js com TypeScript ministrado por Matheus Fraga. O objetivo principal deste projeto é revisar e aprofundar os conhecimentos em React, aplicando-os em conjunto com TypeScript para construir aplicações mais robustas e com tipagem forte.
 
-Currently, two official plugins are available:
+## O que o Projeto Faz
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto é uma calculadora simples que permite aos usuários determinar se é mais vantajoso abastecer o veículo com gasolina ou álcool, com base nos preços inseridos. É uma ferramenta prática para auxiliar na decisão de qual combustível usar.
 
-## Expanding the ESLint configuration
+## Configuração Local
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Para configurar e executar este projeto em sua máquina local, siga os passos abaixo:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Pré-requisitos
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Certifique-se de ter o Node.js e o npm (ou Yarn) instalados em sua máquina.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Passos para Instalação
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1.  **Clone o Repositório:**
+    Abra o terminal ou prompt de comando e clone o repositório para sua máquina local:
+
+    ```bash
+    git clone [https://github.com/JvPaciello/curso-de-react-com-typescript---Calculadora-de-gasolina-e-alcool.git](https://github.com/JvPaciello/curso-de-react-com-typescript---Calculadora-de-gasolina-e-alcool.git)
+    ```
+
+2.  **Navegue até o Diretório do Projeto:**
+
+    ```bash
+    cd curso-de-react-com-typescript---Calculadora-de-gasolina-e-alcool
+    ```
+
+3.  **Instale as Dependências:**
+    Utilize o npm ou Yarn para instalar todas as dependências do projeto. Este projeto foi configurado com Vite, então as dependências necessárias serão instaladas automaticamente.
+
+    ```bash
+    npm install
+    # ou
+    yarn install
+    ```
+
+4.  **Inicie o Servidor de Desenvolvimento:**
+    Após a instalação das dependências, você pode iniciar o servidor de desenvolvimento para visualizar o projeto em seu navegador:
+
+    ```bash
+    npm run dev
+    # ou
+    yarn dev
+    ```
+
+    O projeto será aberto em seu navegador padrão, geralmente em `http://localhost:5173/`.
+
+### Tecnologias Utilizadas
+
+* **React:** Framework para construção de interfaces de usuário.
+* **TypeScript:** Superset do JavaScript que adiciona tipagem estática.
+* **Vite:** Ferramenta de build de frontend que oferece uma experiência de desenvolvimento rápida e otimizada.
